@@ -1,0 +1,4 @@
+@import '@fontsource/baloo-2/variable.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
