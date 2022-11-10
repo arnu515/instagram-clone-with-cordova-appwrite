@@ -26,7 +26,7 @@ const action: ActionFunction = async ({ request }) => {
 		let media: Models.File | null = null;
 		const user = await appwrite.account.get();
 		if (file?.name) {
-			media = await appwrite.storage.createFile('postmedia', postId, file, [
+			media = await appwrite.storage.createFile('instantgram', postId, file, [
 				appwrite.Permission.read(appwrite.Role.any()),
 				appwrite.Permission.write(appwrite.Role.user(user.$id)),
 				appwrite.Permission.update(appwrite.Role.user(user.$id)),
