@@ -111,7 +111,7 @@ const New: FC = () => {
 							/>
 							<Textarea
 								label="Content"
-								placeholder="Post text. You can use some markdown features here."
+								placeholder="Post text"
 								name="content"
 								id="content"
 								minLength={4}
